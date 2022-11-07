@@ -1,0 +1,14 @@
+.img-cricket {
+  width: 70%;
+  height: 100%;
+  margin-left: 80px;
+  z-index: 1;
+  position: relative;
+}
+.text {
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  margin-left: 400px;
+  top: 650px;
+}
