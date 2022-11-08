@@ -31,7 +31,6 @@
     "react-router-dom": "^6.4.3",
     "recoil": "^0.7.6",
     "redux": "^4.2.0",
-    "redux-save": "^0.0.1",
     "redux-thunk": "^2.4.2",
     "styled-components": "^5.3.6",
     "webpack-dev-server": "^4.11.1"

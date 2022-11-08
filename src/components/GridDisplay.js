@@ -11,7 +11,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function GridDisplay(data) {
+function GridDisplay({ data }) {
   return (
     <div>
       <Grid
@@ -19,10 +19,13 @@ function GridDisplay(data) {
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 4, sm: 8, md: 12 }}
       >
-        {data.map((info) => {
+        {data.map((item) => {
           return (
-            <Grid xs={2} sm={4} md={4} key={info.idPlayer}>
-              <Item>{info.strDescriptionEN}</Item>
+            <Grid item xs={2} sm={4} md={4} key={item.idPlayer}>
+              <Item>
+                <img src={item.strThumb} alt="player" width="20%" />
+                {item.strDescriptionEN}
+              </Item>
             </Grid>
           );
         })}

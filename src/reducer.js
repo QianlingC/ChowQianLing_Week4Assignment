@@ -21,7 +21,7 @@ const reducer = (state = initState, action) => {
     // return { ...state, count: state.count - action.payload };
     case actions.GET_POSTS:
       console.log(action.payload.httpResponse);
-      return { ...state, posts: action.payload.httpResponse };
+      return { ...state, posts: action.payload.httpResponse.player };
     //(calling out an object this.state)
     default:
       return state;

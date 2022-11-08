@@ -1,17 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import RoutesData from "./RoutesData";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
-
-class App extends Component {
-  render() {
-    return (
-      <>
-        <RoutesData />
-      </>
-    );
-  }
-}
+const App = () => {
+  return (
+    <>
+      <RoutesData />
+    </>
+  );
+};
 
 export default App;
 
